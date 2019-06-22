@@ -1,6 +1,6 @@
 {
   "name": "@kevinwang0316/use-why-did-you-update",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A React hook to show why your component updated.",
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
