@@ -1,0 +1,56 @@
+{
+  "name": "@kevinwang0316/use-why-did-you-update",
+  "version": "1.0.0",
+  "description": "A React hook to show why your component updated.",
+  "scripts": {
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
+    "unitTest": "jest",
+    "unitTestWatch": "jest --watch",
+    "unitTestCoverage": "jest --coverage",
+    "build": "babel src --plugins @babel/plugin-transform-runtime --out-dir distribution && uglifyjs distribution/UseWhyDidYouUdate.js -c -m -o distribution/UseWhyDidYouUdate.js"
+  },
+  "main": "./distribution/UseWhyDidYouUdate.js",
+  "author": "Gabe Ragland and Bruno Lemos",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PengWang0316/UseWhyDidYouUdate.git"
+  },
+  "keywords": [
+    "Redis",
+    "Asynchronous Client"
+  ],
+  "bugs": {
+    "url": "https://github.com/PengWang0316/UseWhyDidYouUdate/issues"
+  },
+  "homepage": "https://github.com/PengWang0316/UseWhyDidYouUdate#readme",
+  "peerDependencies": {
+    "react": "^16.8.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/runtime": "^7.3.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "coveralls": "^3.0.2",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.3",
+    "jest": "^24.5.0",
+    "jest-environment-jsdom-global": "^1.2.0",
+    "react": "^16.8.3",
+    "uglify-js": "^3.4.9"
+  }
+}
