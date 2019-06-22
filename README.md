@@ -12,10 +12,11 @@ npm install --save @kevinwang0316/use-why-did-you-update
 # Usage
 
 ````javascript
+import React from 'react';
 import useWhyDidYouUpdate from '@kevinwang0316/use-why-did-you-update';
 
 export const yourComponent = (props) => {
-  useWhyDidYouUpdate('name you want', props);
+  useWhyDidYouUpdate(react, 'name you want', props);
   return <div></div>;
 };
 ````
@@ -26,6 +27,7 @@ useWhyDidYouUpdate(name, props, isDisableProduction);
 ````
 | parameter| definition| require| type |default value  |
 | ------------- |:-------------:|:-------------:| :-------------:|:-------------:|
+| react| The React reference you imported in your component | yes | Object | null|
 | name| A name will show when print the difference | yes | String | ''|
 | props| props or stats you want to monitor | yes | Object |null|
 | isDisableProduction| whether disable the monitor under the production | no | Boolean |true |

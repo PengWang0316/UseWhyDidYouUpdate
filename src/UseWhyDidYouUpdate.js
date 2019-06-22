@@ -1,13 +1,12 @@
-import { useRef, useEffect } from 'react';
-
-export const useWhyDidYouUpdate = (name = '', props, disableInProduction = true) => {
+export const useWhyDidYouUpdate = (react, name = '', props, disableInProduction = true) => {
   // Do not run under the production by default
   if (disableInProduction && process.env.NODE_ENV === 'production') return;
+  if (!react) throw new Error('The react parameter has to be provided');
   // Get a mutable ref object where we can store props ...
   // ... for comparison next time this hook runs.
-  const previousProps = useRef();
+  const previousProps = react.useRef();
 
-  useEffect(() => {
+  react.useEffect(() => {
     if (previousProps.current) {
       // Get all keys from previous and current props
       const allKeys = Object.keys({ ...previousProps.current, ...props });
