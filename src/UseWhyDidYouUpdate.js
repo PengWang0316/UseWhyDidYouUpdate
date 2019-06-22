@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'React';
+import { useRef, useEffect } from 'react';
 
 export const useWhyDidYouUpdate = (name = '', props, disableInProduction = true) => {
   // Do not run under the production by default
