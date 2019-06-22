@@ -1,15 +1,15 @@
 {
   "name": "@kevinwang0316/use-why-did-you-update",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React hook to show why your component updated.",
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
     "unitTest": "jest",
     "unitTestWatch": "jest --watch",
     "unitTestCoverage": "jest --coverage",
-    "build": "babel src --plugins @babel/plugin-transform-runtime --out-dir distribution && uglifyjs distribution/UseWhyDidYouUdate.js -c -m -o distribution/UseWhyDidYouUdate.js"
+    "build": "babel src --plugins @babel/plugin-transform-runtime --out-dir distribution && uglifyjs distribution/UseWhyDidYouUpdate.js -c -m -o distribution/UseWhyDidYouUpdate.js"
   },
-  "main": "./distribution/UseWhyDidYouUdate.js",
+  "main": "./distribution/UseWhyDidYouUpdate.js",
   "author": "Gabe Ragland and Bruno Lemos",
   "license": "MIT",
   "jest": {
@@ -20,16 +20,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PengWang0316/UseWhyDidYouUdate.git"
+    "url": "git+https://github.com/PengWang0316/UseWhyDidYouUpdate.git"
   },
   "keywords": [
     "Redis",
     "Asynchronous Client"
   ],
   "bugs": {
-    "url": "https://github.com/PengWang0316/UseWhyDidYouUdate/issues"
+    "url": "https://github.com/PengWang0316/UseWhyDidYouUpdate/issues"
   },
-  "homepage": "https://github.com/PengWang0316/UseWhyDidYouUdate#readme",
+  "homepage": "https://github.com/PengWang0316/UseWhyDidYouUpdate#readme",
   "peerDependencies": {
     "react": "^16.8.3"
   },
